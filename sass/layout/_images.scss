@@ -1,0 +1,11 @@
+.img-list-label {
+    position: relative;
+  }
+  
+  .img-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: var(--card-set-gap);
+  }
+    

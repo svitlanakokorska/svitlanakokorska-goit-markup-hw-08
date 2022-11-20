@@ -1,0 +1,39 @@
+.work {
+    padding-bottom: 0;
+  
+  &-title {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    
+   
+    &-text {
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--body-text-color);
+      width: 270px;
+    }
+    &-list {
+      width: calc((100% - 90px) / 4);
+    }
+   
+    &-group-link {
+      height: 120px;
+      background: #f5f4fa;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: var(--main-title-color);
+    }
+    &-about {
+      display: inline-flex;
+      gap: 30px;
+    }
+  }
+ 

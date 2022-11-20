@@ -1,0 +1,32 @@
+
+  .check-text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+      line-height: 1.71;
+     color: rgba(117, 117, 117, 1);
+  }
+  .check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .check-text::before {
+    content: '';
+width: 16px;
+height: 15px;
+border: 2px solid #212121;
+border-radius: 3px;
+margin-right: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+  }
+.check-input:checked + .check-text::before {
+    background-color: var(--accent-color);
+    border-color: transparent;
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+     }
+  
+ 

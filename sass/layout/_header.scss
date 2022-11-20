@@ -1,0 +1,107 @@
+.header {
+    padding: 24px 0;
+    border: 1px solid #ececec;
+  
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    margin-left: 93px;
+    padding-left: 0;
+  }
+  &__nav-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--body-title-color);
+    min-width: 45px;
+    min-height: 16px;
+    display: inline-block;
+    position: relative;
+    transition-property: color;
+    transition-timing-function: var(--timing-function);
+    transition-delay: 250ms;
+  }
+  
+  &__container {
+    display: flex;
+  }
+  &__contact {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    margin-left: auto;
+    align-items: center;
+  }
+  
+  &__nav-link:hover,
+  &__nav-link:focus,
+  &__contact-mail:hover,
+  &__contact-mail:focus,
+  &__contact-tel:hover,
+  &__contact-tel:focus {
+  color: var(--accent-color);
+}
+
+
+&__studio::after,
+&__portfolio::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: -32px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background: var(--accent-color);
+}
+
+&__contact-mail,
+&__contact-tel {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+  display: inline-block;
+  transition-timing-function: var(--timing-function);
+  transition-delay: 250ms;
+  transition-property: fill;
+}
+&__contact &__contact-mail {
+  display: flex;
+  gap: 10px;
+}
+
+&__mail-icon {
+    transition-timing-function: var(--timing-function);
+    transition-delay: 250ms;
+    transition-property: fill;
+  }
+  &__contact-mail:hover .header__mail-icon {
+    fill: var(--accent-color);
+  }
+  &__contact .header__contact-tel {
+    display: flex;
+    gap: 10px;
+  }
+  &__tel-icon {
+    transition-timing-function: var(--timing-function);
+    transition-delay: 250ms;
+    transition-property: fill;
+  }
+  &__contact-tel:hover &__tel-icon {
+    fill: var(--accent-color);
+  }
+  &__studio {
+    color: var(--accent-color);
+  }
+  
+  &__portfolio {
+    color: var(--accent-color);
+  }
+}

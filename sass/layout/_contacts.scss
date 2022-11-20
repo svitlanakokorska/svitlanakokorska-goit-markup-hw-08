@@ -1,0 +1,52 @@
+
+.address {
+    margin-top: 20px;
+  }
+  address {
+    font-style: normal;
+  }
+  .list-address {
+    marker: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  
+.contacts,
+.color-tel-black,
+.color-mail-black,
+.studio-black,
+.color-studio-black {
+  color: var(--body-title-color);
+}
+.color-mail:hover,
+.color-mail:focus,
+.color-tel:hover,
+.color-tel:focus {
+  color: var(--accent-color);
+}
+
+.color-mail,
+.color-tel {
+  letter-spacing: 0.03em;
+  color: var(--body-text-color);
+  transition-timing-function: var(--timing-function);
+  transition-delay: 250ms;
+  transition-property: color;
+}
+.color-mail {
+  margin-bottom: 9px;
+}
+.color-maps {
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+    margin-bottom: 9px;
+    display: inline-block;
+  }
+  .color-studio,
+.color-address,
+.color-info {
+  color: var(--main-title-color);
+}
