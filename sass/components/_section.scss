@@ -1,7 +1,11 @@
 .section {
+    padding: 60px 0;
+    
+    @media screen and (min-width: 1200px) {
     padding: 94px 0;
-  
-  &__title {
+                    }
+   
+    &__title {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -24,7 +28,7 @@
     color: var(--body-text-color);
     margin-bottom: 16px;
   }
- 
+  
 }
 .section .work {
   padding-left: 215px;

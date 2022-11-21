@@ -1,5 +1,5 @@
 .work {
-    padding-bottom: 0;
+    /*padding-bottom: 0;*/
   
   &-title {
       margin-top: 30px;
@@ -19,10 +19,17 @@
       width: 270px;
     }
     &-list {
+      height: auto;
+    width: 100%;
+ 
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+            }
+     @media screen and (min-width: 1200px) {
       width: calc((100% - 90px) / 4);
-    }
-   
-    &-group-link {
+                    }
+            }
+       &-group-link {
       height: 120px;
       background: #f5f4fa;
       border-radius: 4px;
@@ -32,8 +39,9 @@
       fill: var(--main-title-color);
     }
     &-about {
-      display: inline-flex;
+      display: flex;
       gap: 30px;
+      flex-wrap: wrap;
     }
   }
  
