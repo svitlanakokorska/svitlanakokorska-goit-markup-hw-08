@@ -32,8 +32,7 @@
   }
   .subscribe {
     background-color: var(--accent-color);
-    display: flex;
-    width: 216px;
+     width: 216px;
     height: 50px;
     top:50%;
     left:50%;
@@ -46,7 +45,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    gap: 10px;
+    margin-top: 20px;
+
   }
 
   .cursor {
@@ -79,20 +79,5 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   
- /* .cursor-btn {
-    transition-timing-function: var(--timing-function);
-    transition-delay: 250ms;
-    transition-property: color, background-color, box-shadow ;
-  }*/
-  /* .cursor .cursor-btn {
-    background: #f5f4fa;
-    border-radius: 4px;
-    border: #f5f4fa;
-    display: inline-block;
-    min-width: 73px;
-    min-height: 38px;
-    padding: 6px 25px 6px 25px;
-    font-weight: 500;
-    font-family: inherit;
-    font-size: 16px;
-  }*/
+
+  

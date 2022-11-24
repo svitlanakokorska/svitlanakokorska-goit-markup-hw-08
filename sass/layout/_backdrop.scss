@@ -7,11 +7,7 @@
     position: fixed;
     transition: opasity 300ms linear, visibility 300ms linear;
   }
-  .backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
+ 
   .group-title {
     justify-content: center;
     display: flex;

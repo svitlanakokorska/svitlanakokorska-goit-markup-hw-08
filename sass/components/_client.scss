@@ -2,16 +2,17 @@
 .client-item {
       height: auto;
     width: 100%;
+ 
     @media screen and (min-width: 480px) {
-      width: calc((100% - 30px) / 2);
-
+      max-width: 480px;
+    }
     @media screen and (min-width: 768px) {
       width: calc((100% - 60px) / 3);
             }
      @media screen and (min-width: 1200px) {
       width: calc((100% - 150px) / 6);
                     }
-  }
+  
   .client-link {
     width: 100%;
     height: 100%;

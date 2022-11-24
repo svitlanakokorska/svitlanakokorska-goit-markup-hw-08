@@ -3,6 +3,11 @@ body {
     font-size: 14px;
     color: var(--body-title-color);
   }
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
   .container {
       width: 100%;
     padding-left: 15px;
@@ -19,8 +24,4 @@ body {
       max-width: 1200px;
     }
   }
-  .footer > .container {
-  display: flex;
-  align-items: baseline;
-justify-content: space-between;
-}
+

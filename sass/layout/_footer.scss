@@ -1,7 +1,51 @@
 .footer {
     background-color: #2f303a;
-    padding: 60px 0;
+    padding: 60px 15px;
+    width: 100%;
+    height: 100%;
+ 
   
+    > .container {
+      align-items: baseline;
+      justify-content: center;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      width: 100%;
+      text-align: center;
+           }
+
+        @media screen and (min-width: 480px) {
+    
+                  }
+    @media screen and (min-width: 768px) {
+
+     .logo-footer {
+    font-size: 24px;
+   }
+   .mail-input {
+    width: 450px;
+    height: 50px;
+   }
+   .subscribe {
+    width: 200px;
+    height: 50px;
+    margin-top: 0;
+   }
+              }
+         
+    @media screen and (min-width: 1200px) {
+      
+      .mail-input {
+        width: 358px;
+        height: 50px;
+       } 
+       .group-subscribe {
+        display: flex;
+        gap: 12px;
+       }
+             }
   &__title-soc {
     font-weight: 700;
     margin-bottom: 20px;
@@ -11,6 +55,7 @@
   }
   &__soc-list {
       gap: 10px;
+      justify-content: center;
     }
     &__soc-item {
       width: 44px;
@@ -39,7 +84,7 @@
     }
   }
     .mail-input {
-      width: 358px;
+     width: 358px;
      height: 50px;
      border-radius: 4px;
      background-color:  #2F303A;
@@ -55,4 +100,4 @@
     color: var(--main-title-color);
    }
    
-  
+ 
