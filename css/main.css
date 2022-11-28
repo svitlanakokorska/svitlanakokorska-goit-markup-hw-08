@@ -37,7 +37,6 @@ body {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -45,17 +44,17 @@ body {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -284,9 +283,9 @@ button {
   height: auto;
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .client-item {
-    max-width: 480px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
@@ -301,7 +300,7 @@ button {
 }
 .client-item .client-link {
   width: 100%;
-  height: 100%;
+  height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -363,6 +362,15 @@ button {
   .modal {
     width: 528px;
     min-height: 581px;
+  }
+  .modal .check-text {
+    font-size: 14px;
+  }
+  .modal .text-input {
+    font-size: 12px;
+  }
+  .modal .modal__send {
+    transform: translateX(65%);
   }
 }
 
@@ -478,7 +486,8 @@ button {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    padding: 94px 0;
+    padding-bottom: 94px;
+    padding-top: 0;
   }
 }
 
@@ -570,7 +579,9 @@ button {
 }
 
 .address {
-  margin-top: 20px;
+  margin-top: 28px;
+  margin-bottom: 60px;
+  gap: 12px;
 }
 
 address {
@@ -629,21 +640,42 @@ address {
 
 .footer {
   background-color: #2f303a;
-  padding: 60px 15px;
-  width: 100%;
-  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .container-logo-soc {
+  justify-content: space-between;
 }
 .footer > .container {
-  align-items: baseline;
+  text-align: center;
   justify-content: center;
-  height: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
   width: 100%;
-  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 480px) {
+  .footer {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+  }
+  .footer .address {
+    margin-bottom: 0;
+  }
+  .footer .list-address {
+    gap: 12px;
+  }
+  .footer .container-logo-soc {
+    justify-content: space-around;
+    display: flex;
+    gap: 165px;
+    margin-bottom: 60px;
+  }
   .footer .logo-footer {
     font-size: 24px;
   }
@@ -651,20 +683,52 @@ address {
     width: 450px;
     height: 50px;
   }
+  .footer .group-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   .footer .subscribe {
     width: 200px;
     height: 50px;
     margin-top: 0;
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    transform: translateX(70%);
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer .mail-input {
-    width: 358px;
-    height: 50px;
+  .footer {
+    max-width: 1200px;
+  }
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 45px;
   }
   .footer .group-subscribe {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 12px;
+    flex-direction: row;
+  }
+  .footer .subscribe {
+    transform: translateX(-5%);
+  }
+  .footer .container-logo-soc {
+    justify-content: space-between;
+    display: flex;
+    gap: 94px;
+    margin: 0;
+  }
+  .footer .mail-input {
+    width: 358px;
+    height: 50px;
   }
 }
 .footer__title-soc {
@@ -677,6 +741,7 @@ address {
 .footer__soc-list {
   gap: 10px;
   justify-content: center;
+  padding-bottom: 60px;
 }
 .footer__soc-item {
   width: 44px;
@@ -846,10 +911,7 @@ textarea {
 }
 
 .header {
-  padding: 7px 15px;
   border: 1px solid #ececec;
-  height: 100%;
-  width: 100%;
   /*menu header desk*/
 }
 .header__navigation {
@@ -857,16 +919,12 @@ textarea {
   align-items: center;
 }
 .header__nav {
-  gap: 50px;
   text-align: center;
-  margin-left: 93px;
-  padding-left: 0;
   display: none;
 }
 .header__contact {
   gap: 50px;
   text-align: center;
-  margin-left: auto;
   align-items: center;
   display: none;
 }
@@ -876,8 +934,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .header__nav {
     display: flex;
-    margin-left: 88px;
-    margin-right: 96px;
+    padding-right: 96px;
   }
   .header__contact {
     display: flex;
@@ -897,6 +954,8 @@ textarea {
   }
   .header__contact {
     display: flex;
+    font-size: 14px;
+    gap: 50px;
   }
   .header .button-menu-open {
     display: none;
@@ -909,7 +968,8 @@ textarea {
   color: var(--body-title-color);
   min-width: 45px;
   min-height: 16px;
-  display: inline-block;
+  padding: 32px 32px;
+  display: block;
   position: relative;
   transition-property: color;
   transition-timing-function: var(--timing-function);
@@ -992,6 +1052,10 @@ textarea {
   overflow: auto;
 }
 
+.mob-nav-list {
+  margin-left: 25px;
+}
+
 .mob-nav-list:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -1006,6 +1070,7 @@ textarea {
 
 .mob-contact-list {
   margin-bottom: 32px;
+  margin-left: 25px;
 }
 
 .mob-contact-tel {
@@ -1024,6 +1089,7 @@ textarea {
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-left: 25px;
 }
 
 .button-menu-open {
@@ -1052,6 +1118,20 @@ textarea {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+.mob-soc-list {
+  margin-left: 25px;
+  gap: 20px;
+}
+
+.mob-soc-link::after {
+  content: " ";
+  width: 1px;
+  height: 22px;
+  position: absolute;
+  background-color: rgba(33, 33, 33, 0.2);
+  transform: translateX(10px);
 }
 
 .hero {
@@ -1086,6 +1166,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero {
     padding: 118px 204px;
+    transform: translateY(-1px);
     background-image: var(--gradient), url(../images/hero-tab.jpg);
   }
 }
@@ -1112,17 +1193,20 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .hero .container {
-    max-width: 480px;
+    max-width: 360px;
+    height: 84px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero .container {
-    max-width: 768px;
+    max-width: 360px;
+    height: 84px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero .container {
-    max-width: 1200px;
+    max-width: 696px;
+    height: 120px;
   }
 }
 .hero__title {
@@ -1168,7 +1252,13 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .work-title {
+    text-align: left;
+  }
 }
 .work-text {
   line-height: 1.71;

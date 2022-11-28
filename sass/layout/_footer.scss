@@ -1,50 +1,95 @@
 .footer {
     background-color: #2f303a;
-    padding: 60px 15px;
-    width: 100%;
-    height: 100%;
- 
-  
+       margin-left: auto;
+   margin-right: auto;
+    
+    .container-logo-soc {
+      
+      justify-content: space-between;
+    }
     > .container {
-      align-items: baseline;
+     text-align: center;
       justify-content: center;
-      height: auto;
       display: flex;
       flex-wrap: wrap;
-      gap: 60px;
       width: 100%;
-      text-align: center;
-           }
+     padding-top: 60px;
+     padding-bottom: 60px;
+                 }
 
         @media screen and (min-width: 480px) {
-   
+   max-width: 480px;
                   }
     @media screen and (min-width: 768px) {
-
+     max-width: 768px;
+     .address {
+      margin-bottom: 0;
+     }
+     .list-address {
+      gap: 12px;
+     }
+     .container-logo-soc {
+      justify-content: space-around;
+      display: flex;
+      gap: 165px;
+      margin-bottom: 60px;
+               }
      .logo-footer {
     font-size: 24px;
+   
    }
    .mail-input {
     width: 450px;
     height: 50px;
    }
+   .group-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+   }
    .subscribe {
     width: 200px;
     height: 50px;
     margin-top: 0;
+     display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    transform: translateX(70%);
    }
               }
          
     @media screen and (min-width: 1200px) {
-     
+      max-width: 1200px;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: left;
+      padding-top: 60px;
+      padding-bottom: 45px;
+    }
+    .group-subscribe {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      flex-direction: row;
+     }
+     .subscribe {
+      transform: translateX(-5%);
+     }
+      .container-logo-soc {
+        justify-content: space-between;
+        display: flex;
+        gap: 94px;
+        margin: 0;
+                    }
       .mail-input {
         width: 358px;
         height: 50px;
        } 
-       .group-subscribe {
-        display: flex;
-        gap: 12px;
-       }
+    
              }
   &__title-soc {
     font-weight: 700;
@@ -56,6 +101,7 @@
   &__soc-list {
       gap: 10px;
       justify-content: center;
+      padding-bottom: 60px;
     }
     &__soc-item {
       width: 44px;

@@ -197,25 +197,31 @@
           <ul class="img-list list">
             <li>
               <div class="img-list-label">
-                <img
-                  src="./images/comp.jpg"
+                <picture>
+                  <source srcset="./images/label/desk-1x.jpg 1x,
+                  ./images/label/desk-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                    <img     src="./images/label/desk-1x.jpg"
                   alt="компьютер"
                   width="370"
-                  height="294"
-                />
-                <div class="label-name">
+                  height="294" />
+                </picture>
+                 <div class="label-name">
                   <p>ДЕСКТОПНІ ДОДАТКИ</p>
                 </div>
               </div>
             </li>
             <li>
               <div class="img-list-label">
-                <img
-                  src="./images/mobile.jpg"
-                  alt="телефон"
+                <picture>
+                  <source srcset="./images/label/mob-1x.jpg 1x,
+                  ./images/label/mob-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                    <img     src="./images/label/mob-1x.jpg"
+                  alt="компьютер"
                   width="370"
-                  height="294"
-                />
+                  height="294" />
+                </picture>
                 <div class="label-name">
                   <p>МОБІЛЬНІ ДОДАТКИ</p>
                 </div>
@@ -223,12 +229,14 @@
             </li>
             <li>
               <div class="img-list-label">
-                <img
-                  src="./images/tablet.jpg"
-                  alt="планшет"
+                <source srcset="./images/label/tab-1x.jpg 1x,
+                  ./images/label/tab-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                    <img     src="./images/label/tab-1x.jpg"
+                  alt="компьютер"
                   width="370"
-                  height="294"
-                />
+                  height="294" />
+                </picture>
                 <div class="label-name">
                   <p>ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
                 </div>
@@ -251,7 +259,7 @@
                 media="(min-width: 768px)"/>
                 <source srcset="./images/command/designer-mob-1.jpg 1x,
                 ./images/command/designer-mob-2x.jpg 2x" 
-                media="(min-width: 320px)"/>
+                media="(max-width: 767px)"/>
 
                 <img   class="img" src="./images/command/designer-mob-1.jpg"
                 alt="фото"
@@ -308,7 +316,7 @@
                 media="(min-width: 768px)"/>
                 <source srcset="./images/command/frontend-mob-1.jpg 1x,
                 ./images/command/frontend-mob-2x.jpg 2x" 
-                media="(min-width: 320px)"/>
+                media="(max-width: 767px)"/>
                 <img   class="img" src="./images/command/frontend-mob-1.jpg"
                 alt="фото"
                 width="460"
@@ -364,7 +372,7 @@
                 media="(min-width: 768px)"/>
                 <source srcset="./images/command/marketing-mob-1.jpg 1x,
                 ./images/command/marketing-mob-2x.jpg 2x" 
-                media="(min-width: 320px)"/>
+                media="(max-width: 767px)"/>
 
                 <img   class="img" src="./images/command/marketing-mob-1.jpg"
                 alt="фото"
@@ -420,7 +428,7 @@
                 media="(min-width: 768px)"/>
                 <source srcset="./images/command/ui-mob-1.jpg 1x,
                 ./images/command/ui-mob-2x.jpg 2x" 
-                media="(min-width: 320px)"/>
+                media="(max-width: 767px)"/>
 
                 <img   class="img" src="./images/command/ui-mob-1.jpg"
                 alt="фото"
@@ -514,12 +522,14 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+                 <footer class="footer">
               <div class="container">
-          <div class="container-logo">
+          <div class="container-logo-soc">
+            <div class="container-logo">
             <a href="./index.html" class="logo-footer link"
               ><span class="logo-blue">Web</span>Studio</a
-            >
+            > 
+            
             <address class="address">
               <a
                 href="https://goo.gl/maps/vG6KCRYgaPiJuEGL6"
@@ -528,7 +538,7 @@
                 class="color-maps link"
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
-              <ul class="list-address">
+                            <ul class="list-address">
                 <li>
                   <a href="mailto:info@devstudio.com" class="color-mail link"
                     >info@devstudio.com</a
@@ -541,8 +551,8 @@
                 </li>
               </ul>
             </address>
-          </div>
-      <div class="social"> 
+          </div> 
+          <div class="social">
             <p class="footer__title-soc">приєднуйтесь</p>
             <ul class="footer__soc-list list">
               <li class="footer__soc-item">
@@ -570,7 +580,8 @@
                 </a>
               </li>
             </ul>
-         </div> 
+          </div>
+       </div>
           <div class="mail-list">
             <b class="title-mail">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</b>
             <form class="group-subscribe">
@@ -591,6 +602,7 @@
             </form>
           </div>
         </div>
+      </div>
              </footer>
   <div class="backdrop is-hidden" data-modal>
       <div class="modal">

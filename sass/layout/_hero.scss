@@ -24,6 +24,7 @@
             }
        @media screen and (min-width: 768px) {
         padding: 118px 204px;
+        transform: translateY(-1px);
         background-image: var(--gradient), url(../images/hero-tab.jpg);
         @include retina {
           background-image: var(--gradient),
@@ -45,13 +46,17 @@
                                     }
       .container {
     @media screen and (min-width: 480px) {
-      max-width: 480px;
+      max-width: 360px;
+      height: 84px;
                              }
      @media screen and (min-width: 768px) {
-       max-width: 768px;
+      max-width: 360px;
+      height: 84px;
+     
               }
       @media screen and (min-width: 1200px) {
-       max-width: 1200px;
+        max-width: 696px;
+        height: 120px;
                             }                      
 
       }
