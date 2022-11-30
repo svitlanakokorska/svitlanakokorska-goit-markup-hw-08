@@ -16,8 +16,7 @@
   &__contact {
     gap: 50px;
    text-align: center;
-    align-items: center;
-   display: none;
+    display: none;
  }
  .mob-mail-icon, .mob-tel-icon {
   display: none;
@@ -25,15 +24,17 @@
 
   @media screen and (min-width: 768px) {  &__nav {
     display:flex;
-    padding-right: 96px;
+  
   }
   &__contact {
     display:flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
     font-size: 12px;
     line-height: calc(14/12);
     letter-spacing: 0.02em;
+    justify-content: center;
 
       }
   .button-menu-open {
@@ -46,7 +47,8 @@
                 &__contact {
           display:flex;
           font-size: 14px;
-          gap: 50px;
+          flex-direction: row;
+          gap: 40px;
         }
         .button-menu-open {
           display: none;
@@ -70,6 +72,8 @@
   
   &__container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
       }
   
   
@@ -92,6 +96,7 @@
   left: 0;
   height: 4px;
   width: 100%;
+  bottom: -1px;
   border-radius: 2px;
   background: var(--accent-color);
 }
@@ -229,6 +234,7 @@ margin-left: 25px;
     margin-left: 25px;
     gap: 20px;
   }
+  
    .mob-soc-link::after {
     content: " "; 
     width: 1px;
@@ -236,4 +242,5 @@ margin-left: 25px;
     position: absolute;
     background-color:  rgba(33, 33, 33, 0.2);
     transform: translateX(10px);
-   }
+   } 
+   

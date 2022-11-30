@@ -542,6 +542,7 @@ button {
 
 .command {
   width: 100%;
+  background: #f5f4fa;
 }
 
 .command-item > .name-work {
@@ -550,7 +551,6 @@ button {
 }
 
 .command-img-list {
-  background: #f5f4fa;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -648,21 +648,17 @@ address {
 }
 .footer > .container {
   text-align: center;
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media screen and (min-width: 480px) {
-  .footer {
-    max-width: 480px;
-  }
+  align-items: center;
+  justify-content: space-around;
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    max-width: 768px;
+  .footer .container {
+    justify-content: space-around;
+    align-items: center;
   }
   .footer .address {
     margin-bottom: 0;
@@ -699,16 +695,12 @@ address {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer {
-    max-width: 1200px;
-  }
   .footer .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: left;
-    padding-top: 60px;
-    padding-bottom: 45px;
+    align-items: normal;
   }
   .footer .group-subscribe {
     display: flex;
@@ -925,7 +917,6 @@ textarea {
 .header__contact {
   gap: 50px;
   text-align: center;
-  align-items: center;
   display: none;
 }
 .header .mob-mail-icon, .header .mob-tel-icon {
@@ -934,15 +925,16 @@ textarea {
 @media screen and (min-width: 768px) {
   .header__nav {
     display: flex;
-    padding-right: 96px;
   }
   .header__contact {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
     font-size: 12px;
     line-height: 1.1666666667;
     letter-spacing: 0.02em;
+    justify-content: center;
   }
   .header .button-menu-open {
     display: none;
@@ -955,7 +947,8 @@ textarea {
   .header__contact {
     display: flex;
     font-size: 14px;
-    gap: 50px;
+    flex-direction: row;
+    gap: 40px;
   }
   .header .button-menu-open {
     display: none;
@@ -977,6 +970,8 @@ textarea {
 }
 .header__container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header__nav-link:hover, .header__nav-link:focus, .header__contact-mail:hover, .header__contact-mail:focus, .header__contact-tel:hover, .header__contact-tel:focus {
   color: var(--accent-color);
@@ -989,6 +984,7 @@ textarea {
   left: 0;
   height: 4px;
   width: 100%;
+  bottom: -1px;
   border-radius: 2px;
   background: var(--accent-color);
 }
@@ -1141,17 +1137,12 @@ textarea {
   padding: 118px 0;
   /*overlay*/
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid black;
   background: #c4c4c4;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: var(--gradient), url(../images/hero-mob.jpg);
   margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -1166,8 +1157,8 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero {
     padding: 118px 204px;
-    transform: translateY(-1px);
     background-image: var(--gradient), url(../images/hero-tab.jpg);
+    height: 400px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -1177,13 +1168,14 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px 200px;
+    padding: 200px 0;
     background-image: var(--gradient), url(../images/overlay.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: var(--gradient), url(../images/hero-desk-2x.jpg);
+    height: 600px;
   }
 }
 @media screen and (min-width: 1600px) {

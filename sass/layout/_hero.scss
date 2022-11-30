@@ -5,9 +5,6 @@
     padding: 118px 0;
     /*overlay*/
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 1px solid black;
     background: #c4c4c4;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,8 +21,8 @@
             }
        @media screen and (min-width: 768px) {
         padding: 118px 204px;
-        transform: translateY(-1px);
         background-image: var(--gradient), url(../images/hero-tab.jpg);
+        height: 400px;
         @include retina {
           background-image: var(--gradient),
           url(../images/hero-tab-2x.jpg);
@@ -33,12 +30,13 @@
       }
 
         @media screen and (min-width: 1200px) {
-          padding: 200px 200px;
+          padding: 200px 0;
           background-image: var(--gradient),
           url(../images/overlay.jpg);
-         @include retina {
+           @include retina {
           background-image: var(--gradient),
           url(../images/hero-desk-2x.jpg);
+          height: 600px;
         }
                                         }
         @media screen and (min-width: 1600px) {
@@ -81,7 +79,5 @@
                     }    
                      }
     margin: 0 auto;
-     margin-left: auto;
-    margin-right: auto;
-  }
+     }
   
