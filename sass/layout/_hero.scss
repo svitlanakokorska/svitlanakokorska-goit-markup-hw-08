@@ -30,18 +30,18 @@
       }
 
         @media screen and (min-width: 1200px) {
-          padding: 200px 0;
           background-image: var(--gradient),
           url(../images/overlay.jpg);
            @include retina {
           background-image: var(--gradient),
           url(../images/hero-desk-2x.jpg);
           height: 600px;
+          max-width: 1600px;
+          margin: 0 auto;
+          padding: 200px 0;
         }
                                         }
-        @media screen and (min-width: 1600px) {
-                          padding: 200px 452px;
-                                    }
+       
       .container {
     @media screen and (min-width: 480px) {
       max-width: 360px;

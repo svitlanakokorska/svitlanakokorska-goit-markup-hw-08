@@ -166,6 +166,16 @@ padding-bottom: 48px;
   justify-content: space-between;
   overflow: auto;
 }
+@media screen and (min-width: 480px) {
+  .mob-contact-tel {
+  font-size: 34px;
+ }
+ .mob-soc-link {
+  font-size: 18px;
+ }
+ }
+ @media screen and (min-width: 768px) {
+ display: none;}
 }
 .mob-nav-list {
   margin-left: 25px;
@@ -187,7 +197,7 @@ color: #212121;
    margin-left: 25px;
  }
 .mob-contact-tel {
-font-size: 34px;
+font-size: 27px;
 line-height: calc(40/34);
 letter-spacing: 0.02em;
 color: #2196F3;
@@ -225,7 +235,7 @@ margin-left: 25px;
 }
  
     .mob-soc-link {
-    font-size: 18px;
+    font-size: 12px;
     line-height: calc(22/18);
     letter-spacing: 0.02em;
     color: #2196F3;
@@ -243,4 +253,5 @@ margin-left: 25px;
     background-color:  rgba(33, 33, 33, 0.2);
     transform: translateX(10px);
    } 
+   
    
