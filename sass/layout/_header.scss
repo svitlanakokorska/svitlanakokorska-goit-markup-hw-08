@@ -9,8 +9,7 @@
   
       }
   &__nav {
-       
-    text-align: center;
+       text-align: center;
        display: none;
   }
   &__contact {
@@ -24,8 +23,12 @@
 
   @media screen and (min-width: 768px) {  &__nav {
     display:flex;
-  
+    gap: 50px;
+  .logo_header {
+    margin-right: 88px;
   }
+  }
+
   &__contact {
     display:flex;
     flex-wrap: wrap;
@@ -42,13 +45,14 @@
   }
         }
    @media screen and (min-width: 1200px) {  &__nav {
+          gap: 50px;
           display:flex;
         }
                 &__contact {
           display:flex;
           font-size: 14px;
           flex-direction: row;
-          gap: 40px;
+          gap: 30px;
         }
         .button-menu-open {
           display: none;
@@ -62,7 +66,7 @@
     color: var(--body-title-color);
     min-width: 45px;
     min-height: 16px;
-    padding: 32px 32px;
+    padding: 32px 0;
      display: block;
     position: relative;
     transition-property: color;
@@ -92,11 +96,10 @@
   content: "";
   position: absolute;
   display: inline-block;
-  bottom: -32px;
   left: 0;
   height: 4px;
   width: 100%;
-  bottom: -1px;
+  bottom: 0;
   border-radius: 2px;
   background: var(--accent-color);
 }
@@ -139,10 +142,12 @@
   }
   &__studio {
     color: var(--accent-color);
+    position: relative;
   }
   
   &__portfolio {
     color: var(--accent-color);
+    position: relative;
   }
 
 
@@ -227,7 +232,10 @@ margin-left: 25px;
   display: block;
    background-color: var(--main-title-color);
   border: var(--main-title-color);
- 
+  .icon-menu-close:focus {
+   fill: var(--accent-color);
+   
+  }
   .icon-menu-close {
     background-color: var(--main-title-color);
     border: var(--main-title-color);

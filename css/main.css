@@ -318,12 +318,14 @@ button {
 }
 
 .logo-header {
+  display: block;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--body-title-color);
+  margin-right: 93px;
 }
 
 .logo-footer {
@@ -640,8 +642,7 @@ address {
 
 .footer {
   background-color: #2f303a;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 60px 0;
 }
 .footer .container-logo-soc {
   justify-content: space-between;
@@ -650,8 +651,6 @@ address {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 60px;
-  padding-bottom: 60px;
   align-items: center;
   justify-content: space-around;
 }
@@ -925,6 +924,10 @@ textarea {
 @media screen and (min-width: 768px) {
   .header__nav {
     display: flex;
+    gap: 50px;
+  }
+  .header__nav .logo_header {
+    margin-right: 88px;
   }
   .header__contact {
     display: flex;
@@ -942,13 +945,14 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .header__nav {
+    gap: 50px;
     display: flex;
   }
   .header__contact {
     display: flex;
     font-size: 14px;
     flex-direction: row;
-    gap: 40px;
+    gap: 30px;
   }
   .header .button-menu-open {
     display: none;
@@ -961,7 +965,7 @@ textarea {
   color: var(--body-title-color);
   min-width: 45px;
   min-height: 16px;
-  padding: 32px 32px;
+  padding: 32px 0;
   display: block;
   position: relative;
   transition-property: color;
@@ -980,11 +984,10 @@ textarea {
   content: "";
   position: absolute;
   display: inline-block;
-  bottom: -32px;
   left: 0;
   height: 4px;
   width: 100%;
-  bottom: -1px;
+  bottom: 0;
   border-radius: 2px;
   background: var(--accent-color);
 }
@@ -1024,9 +1027,11 @@ textarea {
 }
 .header__studio {
   color: var(--accent-color);
+  position: relative;
 }
 .header__portfolio {
   color: var(--accent-color);
+  position: relative;
 }
 
 /*mobile menu*/
@@ -1116,6 +1121,9 @@ textarea {
   display: block;
   background-color: var(--main-title-color);
   border: var(--main-title-color);
+}
+.button-menu-close .icon-menu-close:focus {
+  fill: var(--accent-color);
 }
 .button-menu-close .icon-menu-close {
   background-color: var(--main-title-color);
