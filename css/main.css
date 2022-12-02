@@ -967,6 +967,7 @@ textarea {
   min-height: 16px;
   padding: 32px 0;
   display: block;
+  bottom: -1px;
   position: relative;
   transition-property: color;
   transition-timing-function: var(--timing-function);
