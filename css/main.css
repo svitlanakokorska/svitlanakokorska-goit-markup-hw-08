@@ -249,7 +249,7 @@ button {
 .check-text {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.71;
   color: rgb(117, 117, 117);
 }
@@ -344,7 +344,7 @@ button {
 
 .modal {
   padding: 40px;
-  width: 450px;
+  width: 95%;
   min-height: 609px;
   background-color: var(--main-title-color);
   position: absolute;
@@ -356,8 +356,22 @@ button {
   border-radius: 4px;
 }
 @media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
   .modal .check-text {
     font-size: 12px;
+  }
+  .modal .modal__send {
+    transform: translateX(50%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+  .modal .modal__send {
+    transform: translateX(50%);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -430,7 +444,7 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  transform: translateX(50%);
+  transform: translateX(10%);
 }
 
 .section {
@@ -1118,8 +1132,9 @@ textarea {
 }
 
 .button-menu-close {
-  margin-left: auto;
-  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   background-color: var(--main-title-color);
   border: var(--main-title-color);
 }
@@ -1152,6 +1167,11 @@ textarea {
   transform: translateX(10px);
 }
 
+.mob-soc-item:last-child > .mob-soc-link::after {
+  content: "";
+  background-color: transparent;
+}
+
 .hero {
   text-align: center;
   background-color: #2f303a;
@@ -1173,7 +1193,7 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    padding: 118px 60px;
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1190,16 +1210,16 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 600px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 200px 0;
     background-image: var(--gradient), url(../images/overlay.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: var(--gradient), url(../images/hero-desk-2x.jpg);
-    height: 600px;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 200px 0;
   }
 }
 @media screen and (min-width: 480px) {

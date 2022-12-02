@@ -229,9 +229,10 @@ margin-left: 25px;
       }
 }
 .button-menu-close {
-  margin-left: auto;
-  display: block;
-   background-color: var(--main-title-color);
+  position: absolute;
+  top: 10px;
+   right: 15px;
+  background-color: var(--main-title-color);
   border: var(--main-title-color);
   .icon-menu-close:focus {
    fill: var(--accent-color);
@@ -263,4 +264,7 @@ margin-left: 25px;
     transform: translateX(10px);
    } 
    
-   
+   .mob-soc-item:last-child> .mob-soc-link::after {
+  content: '';
+  background-color: transparent;
+   }
